@@ -1,6 +1,6 @@
 <?php
         include ('database.php');
-        $api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        $api_key = "18D3FD27216D77CF6AA3B87E0C31800F";
         $steamid = $_SESSION['userData']['steam_id'];
         $api_url = "https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=381210&key=$api_key&steamid=$steamid";
 
@@ -12,7 +12,33 @@
 
         $steamAPI = $json["playerstats"]["stats"];
         $steamProfile = $profile_json["response"]["players"][0];
-
         
+        //find Display everything in Json PHP
+        $items = $steamAPI;
+
+                // Store the name and value of each item
+                $itemData = array();
+
+                foreach ($items as $item) 
+                {
+                        $name = $item['name'];
+                        $value = $item['value'];
+
+                        $itemData[] = array
+                        (
+                        'name' => $name,
+                        'value' => $value
+                        );
+                }
+
+                // Display all items
+                foreach ($itemData as $item) 
+                {
+                        echo 'Item Name: ' . $item['name'] . '<br>';
+                        echo 'Item Value: ' . $item['value'] . '<br>';
+                        echo '<br>';
+                }
+
+
 ?>
 

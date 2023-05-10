@@ -48,7 +48,7 @@ else
     exit();
 }
 
-$steam_api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX';
+$steam_api_key = '18D3FD27216D77CF6AA3B87E0C31800F';
 
 $response = file_get_contents('https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key='.$steam_api_key.'&steamids='.$steamID64);
 $response = json_decode($response,true);
@@ -63,7 +63,7 @@ $_SESSION['userData'] = [
     'avatar'=>$userData['avatarmedium'],
 ];
 
-include ('steamapi.php');
+
 
 $redirect_url = "index.php";
 header("Location: $redirect_url"); 

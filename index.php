@@ -46,7 +46,7 @@ session_start();
                                 <button class="dropbtn" onclick="myFunction()"><img class="circular--square" style="vertical-align:middle" src="<?php echo $_SESSION['userData']['avatar'] ?>"/><?php echo $_SESSION['userData']['name'] ?><i class="fa fa-caret-down"></i>
                                 </button>
                                 <div class="dropdown-content" id="myDropdown">
-                                    <a href="#">Profile</a>
+                                    <a href="stats.php">Profile</a>
                                     <a href="#">Settings</a>
                                     <a href="logout.php">Sign out</a>
                                 </div>
