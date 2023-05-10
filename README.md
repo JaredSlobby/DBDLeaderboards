@@ -9,9 +9,9 @@ The only way for your profile stats to become available on the site would be if 
 Project started on 08/05/2023
 
 Main Features: 
-Sign in via Steam using OpenID (Completed)
-Leaderboards for top players (Completed)
-View anybodies game stats (As long as Steam accounts privacy is public)
-Compare stats with anybody (As long as Steam accounts privacy is public)
-Check stats daily
-See daily progress of stats
+1. Sign in via Steam using OpenID (Completed)
+2. Leaderboards for top players (Completed)
+3. View anybodies game stats (As long as Steam accounts privacy is public)
+4. Compare stats with anybody (As long as Steam accounts privacy is public)
+5. Check stats daily
+6. See daily progress of stats
