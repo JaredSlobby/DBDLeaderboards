@@ -15,3 +15,4 @@ Main Features:
 4. Compare stats with anybody (As long as Steam accounts privacy is public)
 5. Check stats daily
 6. See daily progress of stats
+7. See your position on the leaderboards for each specific record (Completed)
