@@ -1,6 +1,6 @@
 <?php
         include ('database.php');
-        $api_key = "18D3FD27216D77CF6AA3B87E0C31800F";
+        $api_key = "XXXXXXXXXXXXXXXXXX";
         $steamid = $_SESSION['userData']['steam_id'];
         $api_url = "https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=381210&key=$api_key&steamid=$steamid";
 
